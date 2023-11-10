@@ -89,8 +89,86 @@ header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alter
 }
 
 
+
+
+
 #products {
     padding: 30px;
     background-color: ;
 }
 
+#products {  /* ID usada para a section dos nossos produtos */
+    
+    background-color: linear-gradient(180deg #d49664 8.33%, rgba)(244,200,175,0 100%) 175, 0() 100%;
+    padding: 30px;
+
+}
+
+.section-products {
+    margin-top: 3em;
+    display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+}
+
+.img-products {
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+.title-products {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-content: space-evenly;
+
+}
+
+#products > a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #00000000;
+    display: flex;
+    justify-content: center;
+    text-align: center; /* 
+}
+
+#products > H2 {
+    text-align: center; 
+}
+
+#products > a:hover {  /* Efeito ao passar o mouse */
+    font-size: 22px; /* tamanho da letra */
+    transition: 0.8s; /* tempo de transição ao passar o mouse */ 
+    color: tomato; /* cor da letra ao passar o mouse */
+}
+
+#sobre-nos { /* chamamos nosso nós para estilização */
+    background-image: url(imagem/fundo-sobre-nos.jpg); /* inserimos aqui */
+    background-repeat: no-repeat; /* não repetição de imagem */
+    background-position: center; /* posicionamento da imagem ao centro */
+    background-size: cover; /* habilitando o tamanho total da imagem */
+    background-attachment: fixed; /* deixando a imagem fizada */
+    padding: 120px; /* tamanho do preenchimento da sessão */
+}
+
+/* h3, alterna a cor, tamanho alinhamento e familia de fonte */
+
+#sobre-nos > h3 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#sobre-nos > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 22px;
+    margin-top: 2em;
+    text-align: left;
+}
