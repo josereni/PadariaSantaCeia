@@ -89,7 +89,12 @@ header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alter
 }
 
 
-
+main > section > h2 {
+    margin-top: 0px;
+    font-size: 36;
+    text-align: center;
+    color: black;
+}
 
 
 #products {
@@ -132,7 +137,25 @@ header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alter
     color: #00000000;
     display: flex;
     justify-content: center;
-    text-align: center; /* 
+    text-align: center; 
+}
+  
+
+#clients  {
+    background-color: white;
+    margin-top: 0;
+    padding: 50px;
+text-align: center;
+display: flex;
+
+
+
+}
+
+#clients {
+    background-color: white;
+    margin-top: 0;
+    margin-top: 50px;
 }
 
 #products > H2 {
@@ -171,4 +194,45 @@ header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alter
     font-size: 22px;
     margin-top: 2em;
     text-align: left;
+}
+
+
+footer {
+    padding: 80px;
+    background-image: url(imagem/img-footer.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer h2 {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.item-menu-footer { /* aqui chamamos nossa class das LI*/
+    align-items: center; /* posicionamos ao centro */
+    margin-top: 30px; /* espaçamento superior */
+    display: flex; /* alinhando os itens lado a lador*/
+}
+
+.item-menu-footer img { /* aqui chamamos nossa IMG para estilização */
+    width: 34px; /* largura da imagem */
+    height: 34px; /* altura da imagem */
+}
+
+/* Chamem a TAG P para estilização */
+
+.item-menu-footer p { 
+    color: black; /* cor da letra */
+    font-size: 24px; /* tamanho da letra */
+    font-weight: bold; /* espressura da letra */
+    margin-left: 10px; /* espaçamento a esquerda */
 }
