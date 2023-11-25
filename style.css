@@ -89,13 +89,64 @@ header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alter
 }
 
 
-main > section > h2 {
-    margin-top: 0px;
-    font-size: 36;
-    text-align: center;
-    color: black;
+main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
+    margin-top: 0px; /*  indica o espaço acima do elemento / superior */
+    font-size: 36px;  /* Tamanho da letra */
+    text-align: center; /* Alinhando o texto para o centro */
+    color: #000000; /* Cor da letra do nosso H2 */
 }
 
+#clients { /* Aqui chamamos nosso ID da Section*/
+    background-color: white; /* Cor de fundo da nossa Section*/
+    margin-top: 0; /*  indica o espaço acima do elemento / superior */
+    padding: 50px; /* Cuida do Preenchimento */
+}
+
+
+#clients h2 {
+    text-align: center;
+}
+
+.line{ /* Aqui chamamos nossa Class que está dentro do nosso HR, que é utilizado como uma quebra de linha temática entre elementos HTML*/
+    margin: 0 auto; /* Definimos em 0 a margin e colocamos o mesmo para auto para que recaia para o todo */
+    width: 20%; /* Largura */
+}
+
+#clients-list { /* Aqui chamamos a nossa ID */ 
+    display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado) */
+    align-items: center; /* Alinhar os itens para o centro */
+    justify-content: space-evenly; /* Tradução:justificar-conteúdo: espaço uniformemente. Alinhar os itens igualmente dentro da página */
+    margin-top: 30px; /* indica o espaço acima do elemento / superior */
+}
+
+.clients-item { /* Aqui chamamos nossa Class que está dentro da nossa ID */
+    display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado) */
+    justify-content: center; /* Justificar-conteúdo no centro*/
+    align-items: center; /* Alinhar os itens para o centro */
+    flex-direction: column; /* */
+}
+
+.clients-item > img { /* Aqui chamamos nossa Tag IMG para estilização*/
+    width: 84px; /* Lagura */
+    height: 84px; /* Tamanho */
+}
+
+
+
+
+.clients-item > h3 { /* Aqui chamamos nosso H3 para estilizar*/
+    font-family: 'Dancing Script', cursive; /* Fonte escolhida */
+    font-size: 32px; /* Tamanho da fonte*/
+    align-items: center; /* Alinhar os itens para o centro */
+    margin-top: 10px; /* indica o espaço acima do elemento / superior */
+}
+
+.clients-item > p { /* Aqui chamamos nossa TAG P para estilização*/
+    font-family: 'Dancing Script', cursive; /* Fonte escolhida*/
+    font-size: 26px; /* Tamanho da fonte */
+    margin-top: 10px; /*  indica o espaço acima do elemento / superior */
+    align-items: center; /* Alinhar os itens para o centro */
+}
 
 #products {
     padding: 30px;
@@ -235,4 +286,29 @@ footer h2 {
     font-size: 24px; /* tamanho da letra */
     font-weight: bold; /* espressura da letra */
     margin-left: 10px; /* espaçamento a esquerda */
+}
+
+
+
+@media(max-width:430){
+#menu-header{
+    display: none;
+}
+
+#btn-header button a {
+    display: block;
+    font-family: bold;
+
+}
+
+#btn-header button a p{
+    font-size: 0.8px;
+}
+
+
+
+
+
+
+
 }
