@@ -83,7 +83,7 @@ header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alter
 
 
 #img-destaque { /* Aqui chamamos a ID que chamamos no HTML*/
-    padding: 260px;  /* Cuida do Preenchimento */
+    padding: 20%;  /* Cuida do Preenchimento */
     background-image: url(imagem/padaria.webp); /* Usada para inserir imagens de fundo */
     background-position: center; /* Aqui posicionamos nossa imagem para o centro */
 }
@@ -290,8 +290,9 @@ footer h2 {
 
 
 
-@media(max-width:430){
-#menu-header{
+@media(max-width:430px){
+
+#menu-header {
     display: none;
 }
 
@@ -307,8 +308,15 @@ footer h2 {
 
 
 
+}
 
-
-
+#img-destaque {
+  max-width: 100%;
+  height: auto;
 
 }
+
+#img-padaria {
+    width: 100%;
+}
+
