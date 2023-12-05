@@ -225,14 +225,14 @@ display: flex;
     background-position: center; /* posicionamento da imagem ao centro */
     background-size: cover; /* habilitando o tamanho total da imagem */
     background-attachment: fixed; /* deixando a imagem fizada */
-    padding: 120px; /* tamanho do preenchimento da sessão */
+    padding: 10%; /* tamanho do preenchimento da sessão */
 }
 
 /* h3, alterna a cor, tamanho alinhamento e familia de fonte */
 
 #sobre-nos > h3 {
     color: white;
-    font-size: 60px;
+    font-size: 4em;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -309,7 +309,7 @@ footer h2 {
 
 
 
-}
+
 
 #img-destaque {
   max-width: 100%;
@@ -344,4 +344,28 @@ footer h2 {
  
 .products {
     display: block;
+}
+ 
+.img-products {
+    margin-top: 60%;
+}
+
+#featured-products > a {
+    margin-top: 25px;
+}
+
+#sobre-nos h3 {
+    font-size: 1.7em;
+}
+
+#sobre-nos p {
+    font: bold;
+    font-size: 1.2em;
+}
+.contatos-footer {
+    display: block;
+}
+
+
+
 }
