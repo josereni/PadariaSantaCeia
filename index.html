@@ -5,37 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padaria Santa Ceia | Site Oficial</title>
+    <title>Empório Padaria | Site Oficial</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget();
-  </script>
-
-
-<header>
-
-       <img src="imagem/tangirina.png" alt="">
-       <h1>PADARIA SANTA CEIA</h1>
+  <header>
+       <img src="img/tangirina.png" alt="">
+       <h1>EMPÓRIO PADARIA</h1>
        <nav id="menu-header">
-
          <ul id="list-menu">
             <li class="item-menu-header">
               <a href="index.html">HOME</a>
             </li>
-
             <li class="item-menu-header">
-              <a href="produtos.html">PRODUTOS</a>
+              <a href="#featured-products">PRODUTOS</a>
             </li>
             <li class="item-menu-header">
               <a href="#contatos">CONTATO</a>
@@ -45,13 +30,13 @@
               <a href="#sobre-nos">SOBRE NÓS</a>
             </li>
 
-            </ul>
+         </ul>
        
        <div id="btn-header">
           <button>
               <a href="form.html" target="_blank">
                 
-                <img src="imagem/user.png" alt="">
+                <img src="img/user.png" alt="">
                 <p>Cadastre-se</p>
               </a>
           </button>
@@ -63,151 +48,112 @@
 
 <div class="img-div"></div>
 
-
 <main>
    <section id="clients">
-
        <h2>NOSSOS CLIENTES</h2>
-
-       
+       <hr class="line">
        <ul id="clients-list">
-
           <li class="clients-item">
-             <img src="imagem/personagem.png" alt="">
+             <img src="img/personagem.png" alt="">
              <h3>Igor Oliveira</h3>
               <p>"Ótimos produtos e serviços"</p>
           </li>
-
           <li class="clients-item">
-            <img src="imagem/personagemfemi.png" alt="">
+            <img src="img/personagemfemi.png" alt="">
             <h3>Isadora Martins</h3>
              <p>"Excelente preço"</p>
          </li>
-
          <li class="clients-item">
-          <img src="imagem/personagem.png" alt="">
+          <img src="img/personagem.png" alt="">
           <h3>Samuel Rodrigues de Souza</h3>
            <p>"Pães frescos e de ótima qualidade"</p>
        </li>
-
        </ul>
-
    </section>
 
-   <section id="products">
+   <div class="img-div"></div>
 
- <h2>PRINCIPAIS PRODUTOS</h2>
-
-    <div class="section-products">
-
-        <div>
-            <img src="imagem/muflin.jpg" alt="imagem mufflin" class="img-products">
-            <h4 class="title-products">Mufflin</h4>
-
-        </div>
-
-        <div>
-            <img src="imagem/croissant.jpeg" alt="imagem coissant" class="img-products">
-            <h4 class="title-products">Croissan</h4>
-        </div>
-
-   </div>
-
-
-   <div class="section-products">
-
-        <div>
-
-            <img src="imagem/bolo.jpg" alt="imagem bolo" class="img-products">
-            <h4 class="title-products">Bolo</h4>
-        </div>
-
-        <div>
-
-           <img src="imagem/pao-de-metro.jpg" alt="imagem pao-de-metro" class="img-products">
-           <h4 class="title-products">Pão-de-metro</h4>
-
-        </div>
-  </div>
-
-  <div class="section-products">
-
-        <div>
-            <img src="imagem/beirute.png" alt="imagem beirute" class="img-products">
-            <h4 class="title-products">Beirute</h4>
-        </div>
-
-        <div>
-          <img src="imagem/pao.jpg" alt="imagem beirute" class="img-products">
-          <h4 class="title-products">Pão</h4>
+  <section id="featured-products">
+      <h2>PRINCIPAIS PRODUTOS</h2>
+      <div class="products">
+         <div>
+            <img src="img/muflin.jpg" alt="" class="img-product">
+             <h4 class="title-products">Mufflin</h4>
+         </div>
+         <div>
+          <img src="img/croissant.jpeg" alt="" class="img-product">
+           <h4 class="title-products">Croissant</h4>
+         </div>
       </div>
 
+       <div class="products">
+         <div>
+          <img src="img/bolo.jpg" alt="" class="img-product">
+           <h4 class="title-products">Bolos</h4>
+         </div>
+         <div>
+        <img src="img/bomba-chocolate.jpg" alt="" class="img-product">
+         <h4 class="title-products">Bomba de Chocolate</h4>
+        </div>
+     </div>
 
-</div>
-
-<a href="produtos.html">
-  ver tudo
-</a>
+     <div class="products">
+        <div>
+        <img src="img/beirute.png" alt="" class="img-product">
+         <h4 class="title-products">Beirute</h4>
+       </div>
+       <div>
+        <img src="img/pao-de-metro.jpg" alt="" class="img-product">
+        <h4 class="title-products">Pão de metro</h4>
+      </div>
+    </div>
+    <a href="products.html">
+      Ver tudo
+    </a>
 </section>
-
-
-   
-</main>
 
 <section id="sobre-nos">
-<h3>SOBRE NÓS</h3>
+    <h3>SOBRE NÓS</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean libero neque, lacinia sed ex id, egestas scelerisque elit. Nullam commodo, justo non aliquet mollis, mauris nunc hendrerit nisl, rhoncus aliquam magna nunc sed felis. Etiam quis velit at ante tempus bibendum. Ut dapibus consequat neque, et varius erat condimentum at. Mauris finibus porta nibh, et feugiat urna sodales non. Nam tristique, mi condimentum condimentum euismod, libero odio maximus velit, sed placerat nibh leo tristique massa. Sed tincidunt condimentum fermentum. Sed at metus vitae nisi sagittis venenatis. Donec id risus leo. Nullam facilisis risus auctor ante sollicitudin aliquet<br>
+    </p>
+    <p>
+      Estibulum molestie ligula sit amet purus congue, in tristique metus rutrum. Aenean porta volutpat lacus, nec fringilla augue porttitor et. Pellentesque sit amet justo neque. Quisque a dapibus purus. Etiam feugiat massa quis lectus pellentesque pretium. Nam blandit mi metus, et lacinia neque porttitor sed. Aenean vitae lectus urna. Quisque eu enim elit. Sed ornare sollicitudin magna a varius. Sed nec lacus id elit molestie rutrum ut et neque. <br>
+    </p>
+    <p>
+      Pulvinar in metus sit amet ultricies. Proin posuere rutrum mi. Phasellus turpis turpis, placerat ac sem non, elementum bibendum quam. Nullam varius nunc a lectus consectetur auctor. Aenean luctus sagittis ex, at pharetra dolor ultricies ac. Morbi sed tristique quam. Nulla facilisi. Proin volutpat, mi nec varius laoreet, leo sem congue nunc, id lobortis justo metus nec lectus.
+    </p>
+ </section>
+</main>
+       
+<div class="imPulvinar in metus sit amet ultricies. Proin posuere rutrum mi. Phasellus turpis turpis, placerat ac sem non, elementum bibendum quam. Nullam varius nunc a lectus consectetur auctor. Aenean luctus sagittis ex, at pharetra dolor ultricies ac. Morbi sed tristique quam. Nulla facilisi. Proin volutpat, mi nec varius laoreet, leo sem congue nunc, id lobortis justo metus nec lectus.g-div"></div>
 
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti vitae quod odio soluta, esse blanditiis in exercitationem obcaecati. Amet rem nobis non officia eum sit, porro accusamus doloribus laudantium doloremque!</p>
+<footer id="contatos">
+     <h2>CONTATOS</h2>
+     <ul>
+        <div>
+           <li class="item-menu-footer">
+               <img src="img/icon-telephone.png" alt="">
+                <p>(11) 4002-8922</p>
+           </li>
+            <li class="item-menu-footer">
+                <img src="img/icon-local.png" alt="">
+                <p>Rua Professor Leonídio Alegretti, 757</p>
+            </li>
+        </div>
 
-
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dignissimos eos totam, neque dolores aliquid mollitia suscipit nostrum quae fugiat! Provident ipsam, optio temporibus reprehenderit voluptate libero fugiat laudantium exercitationem!</p>
-
-
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, explicabo officia ea consectetur sequi quos est facilis corrupti, omnis asperiores aperiam, deleniti sed similique dolorem sit nihil neque! Tempora, quia.</p>
-</section>
-
-<footer id="contatos"> 
-  <!-- footer é para criação  do nosso rodar pé  -->
-  <h2>CONTATOS</h2>
-
-<ul class="contatos-footer">
-
-  <div>
-    <li class="item-menu-footer">
-      <img src="imagem/icon-telephone.png" alt="">
-      <p>(11) 4002-8922</p>
-    </li class>
-
-    <li class="item-menu-footer">
-      <img src="imagem/icon-local.png" alt="">
-      <p>Rua Augusto Carlos Bauman, 266 - São paulo/SP</p>
-    </li class>
-
-</div>
-
-<div>
-    <li class="item-menu-footer">
-      <img src="imagem/icon-wpp (1).png" alt="">
-      <p>(11) 990089826</p>
-    </li class>
-
-    <li class="item-menu-footer">
-      <img src="imagem/icon-instagram.png" alt="">
-      <p>@PADARIASANTACEIA</p>
-    </li class>
-
-
-  </div>
-
-
-
-</ul>
-
-
-
+        <div>
+          <li class="item-menu-footer">
+              <img src="img/icon-wpp.png" alt="">
+               <p>(11) 94002-8922</p>
+          </li>
+           <li class="item-menu-footer">
+               <img src="img/icon-instagram.png" alt="">
+               <p>@emporiopadaria, 757</p>
+           </li>
+       </div>
+     </ul>
 </footer>
-
-   
 
 </body>
 

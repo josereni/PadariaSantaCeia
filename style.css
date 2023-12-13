@@ -80,14 +80,25 @@ header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alter
     font-weight: 400; /* espessura da fonte */
 }
 
-
-
 #img-destaque { /* Aqui chamamos a ID que chamamos no HTML*/
-    padding: 20%;  /* Cuida do Preenchimento */
-    background-image: url(imagem/padaria.webp); /* Usada para inserir imagens de fundo */
+    padding: 260px;  /* Cuida do Preenchimento */
+    background-image: url(img/padaria.webp); /* Usada para inserir imagens de fundo */
     background-position: center; /* Aqui posicionamos nossa imagem para o centro */
 }
 
+
+/* Diferença entre ID e Class: A diferença entre um id e uma class é que um id é usado apenas para identificar um único elemento em nosso HTML. 
+Os identificadores são usados ​​apenas quando um elemento na página precisa ter um estilo específico aplicado a ele. 
+No entanto, uma class pode ser usada para identificar mais de um elemento HTML*/
+
+
+
+.img-div {  /* Aqui chamamos nossa Class para alteração*/ 
+    padding: 25px; /* Cuida do Preenchimento */ 
+    background-image: url(img/img-div.jpg); /* Usada para inserir imagens de fundo */
+    background-position: center; /* Aqui posicionamos nossa imagem para o centro */ 
+    background-size: auto; /* Background-Size: especifica o tamanho das imagens de fundo. Auto: Responsável por preencher totalmente a imagem. */
+}
 
 main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
     margin-top: 0px; /*  indica o espaço acima do elemento / superior */
@@ -100,11 +111,6 @@ main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
     background-color: white; /* Cor de fundo da nossa Section*/
     margin-top: 0; /*  indica o espaço acima do elemento / superior */
     padding: 50px; /* Cuida do Preenchimento */
-}
-
-
-#clients h2 {
-    text-align: center;
 }
 
 .line{ /* Aqui chamamos nossa Class que está dentro do nosso HR, que é utilizado como uma quebra de linha temática entre elementos HTML*/
@@ -148,224 +154,120 @@ main > section > h2 { /* Aqui estamos chamando nosso H2 para estilização */
     align-items: center; /* Alinhar os itens para o centro */
 }
 
-#products {
-    padding: 30px;
-    background-color: ;
+#featured-products { /* ID usada para a section dos nossos produtos */
+    background: linear-gradient(180deg, #d49664 8.33%, rgba(244, 200, 175, 0) 100%); /* Aqui colocamos uma estilização de fundo em Degradê */
+    padding: 30px; /* Preenchimento */
 }
 
-#products {  /* ID usada para a section dos nossos produtos */
-    
-    background-color: linear-gradient(180deg #d49664 8.33%, rgba)(244,200,175,0 100%) 175, 0() 100%;
-    padding: 30px;
-
+.products  {  /* Aqui chamamos nossa Class dos produtos para estilização.*/
+    margin-top: 3em; /*  indica o espaço acima do elemento / superior */
+    display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado) */
+    align-items: center; /* Alinhar os itens para o centro */
+    justify-content: space-evenly; /* Tradução:justificar-conteúdo: espaço uniformemente. Alinhar os itens igualmente dentro da página */
 }
 
-.section-products {
-    margin-top: 3em;
-    display: flex;
- align-items: center;
- justify-content: space-evenly;
+.img-product { /* Class inserida nas nossas tags IMG */
+    width: 300px; /* Largura */
+    height: 300px; /* Tamanho */
+    border-radius: 50px; /* Estilo arredondado das bordas */
 }
 
-.img-products {
-    width: 300px;
-    height: 300px;
-    border-radius: 50px;
+.title-products {  /* Class usada para edição dos títulos dos produtos, exemplo perfeito de o porque usamos a classe nesses casos */
+    margin-top: 10px; /* indica o espaço acima do elemento / superior */
+    font-family: 'Ubuntu', 'sans-serif'; /* Fonte selecionada */
+    text-align: center; /* Alinhar texto. Center: Centro*/
+    font-size: 22px; /* Tamanho da Letra */
 }
 
-.title-products {
-    margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    justify-content: space-evenly;
-
-}
-
-#products > a {
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: #00000000;
-    display: flex;
+#featured-products > a { /* Aqui estamos chamando nossa TAG de link para estilização */
+    text-decoration: none; /* Aqui desabilitamos com o none qualquer sublinado que tenha dentro da nossa TAG "a" */
+    font-family: 'Ubuntu', 'sans-serif'; /* Fonte selecionada */
+    font-size: 20px; /* Tamanho da letra */
+    color: red; /* Cor da Letra */
     justify-content: center;
-    text-align: center; 
-}
-  
-
-#clients  {
-    background-color: white;
-    margin-top: 0;
-    padding: 50px;
-text-align: center;
-display: flex;
-
-
-
+    margin-left: 55rem;
 }
 
-#clients {
-    background-color: white;
-    margin-top: 0;
-    margin-top: 50px;
+#featured-products > a:hover { /* Aqui estamos chamando novamente nossa TAG de link para colocar um efeito Hover nela */
+    text-decoration: underline; /* Aqui chamamos o text decoration para colocar uma decoração ao passar do cursos underline serve como um sublinhado em baixo do nome*/
+    font-size: 22px; /* Tamanho da letra ao passar o cursor em cima */
+    transition: 1s; /* O tempo que será realizado esta ação */
 }
 
-#products > H2 {
-    text-align: center; 
-}
 
-#products > a:hover {  /* Efeito ao passar o mouse */
-    font-size: 22px; /* tamanho da letra */
-    transition: 0.8s; /* tempo de transição ao passar o mouse */ 
-    color: tomato; /* cor da letra ao passar o mouse */
-}
-
-#sobre-nos { /* chamamos nosso nós para estilização */
-    background-image: url(imagem/fundo-sobre-nos.jpg); /* inserimos aqui */
-    background-repeat: no-repeat; /* não repetição de imagem */
-    background-position: center; /* posicionamento da imagem ao centro */
-    background-size: cover; /* habilitando o tamanho total da imagem */
-    background-attachment: fixed; /* deixando a imagem fizada */
-    padding: 10%; /* tamanho do preenchimento da sessão */
-}
-
-/* h3, alterna a cor, tamanho alinhamento e familia de fonte */
-
-#sobre-nos > h3 {
-    color: white;
-    font-size: 4em;
+#featured-products > h2 {
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-#sobre-nos > p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    color: white;
-    font-size: 22px;
-    margin-top: 2em;
-    text-align: left;
-}
-
-
-footer {
-    padding: 80px;
-    background-image: url(imagem/img-footer.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-
-footer ul {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-footer h2 {
-    color: black;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.item-menu-footer { /* aqui chamamos nossa class das LI*/
-    align-items: center; /* posicionamos ao centro */
-    margin-top: 30px; /* espaçamento superior */
-    display: flex; /* alinhando os itens lado a lador*/
-}
-
-.item-menu-footer img { /* aqui chamamos nossa IMG para estilização */
-    width: 34px; /* largura da imagem */
-    height: 34px; /* altura da imagem */
-}
-
-/* Chamem a TAG P para estilização */
-
-.item-menu-footer p { 
-    color: black; /* cor da letra */
-    font-size: 24px; /* tamanho da letra */
-    font-weight: bold; /* espressura da letra */
-    margin-left: 10px; /* espaçamento a esquerda */
+    margin-top: 7rem;
+    font-size: 30px;
 }
 
 
 
-@media(max-width:430px){
-
-#menu-header {
-    display: none;
+#sobre-nos { /* Chamamos aqui nossa ID */
+    background-image: url(img/fundo-sobre-nos.jpg); /* Usado para inserir a imagem de fundo */
+    background-repeat: no-repeat; /* Aqui colocamos a função para a imagem não seja repetida */
+    background-attachment: fixed; /* */
+    background-position: center; /* Na posição da imagem colocamos ao centro */
+    background-size: cover; /* */
+    padding: 120px; /* */
 }
 
-#btn-header button a {
-    display: block;
-    font-family: bold;
-
+#sobre-nos > h3 {  /* */
+    color: white; /* */
+    font-size: 64px; /* */
+    text-align: center; /* */
+    font-family: 'Ubuntu', 'sans-serif'; /* */
 }
 
-#btn-header button a p{
-    font-size: 0.8px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-
-
-
-#img-destaque {
-  max-width: 100%;
-  height: auto;
-
-}
-
-#img-padaria {
-    width: 100%;
-}
-
-#clients-list {
-    display: block;
-}
-
-#clientes h2 {
-    font-size: 1.8em;
+#sobre-nos >  p {   /* */ 
+    font-family: 'Ubuntu', 'sans-serif'; /* */
+    font-weight: 500; /* */
+    color: white; /* */
+    font-size: 22px; /* */
+    margin-top: 2em; /* */
+    text-align: left; /* */
+    
 }
 
 
 
-.line {
-    margin: auto;
-    width: 70%;
+footer {    /* */
+    padding: 80px;  /* */
+    background-image: url(img/img-footer.jpg);  /* */
+    background-position: bottom;  /* */
+    background-repeat: no-repeat;  /* */
+    
 }
 
-#clientes p {
-    font-size: 1.6em;
-    text-align: center;
-    margin-bottom: 10%;
- }
- 
-.products {
-    display: block;
-}
- 
-.img-products {
-    margin-top: 60%;
+footer > ul {   /* */
+    display: flex;  /* */
+    justify-content: space-evenly;  /* */
 }
 
-#featured-products > a {
-    margin-top: 25px;
+footer > h2 {  /* */
+    color: black bold; /* */
+    font-size: 40px;  /* */
+    font-weight: bold;  /* */
+    text-align: center;  /* */
+    margin-bottom: 1em;  /* */
 }
 
-#sobre-nos h3 {
-    font-size: 1.7em;
+.item-menu-footer {  /* */
+    display: flex;  /* */
+    align-items: center;  /* */
+    margin-top: 30px;  /* */
 }
 
-#sobre-nos p {
-    font: bold;
-    font-size: 1.2em;
-}
-.contatos-footer {
-    display: block;
+.item-menu-footer > img {  /* */
+    width: 34px;  /* */
+    height: 34px;  /* */
 }
 
-
-
+.item-menu-footer > p {  /* */
+    color: black bold; /* */
+    font-size: 24px; /* */
+    font-weight: bold; /* */
+    margin-left: 10px; /* */
 }
